@@ -1,9 +1,24 @@
-The research project was done during my internship at the Medical Imaging Group at the Indian Institute of Science, Bangalore.
+# Median Nerve Segmentation — CNN-Based Medical Imaging
 
-Ultrasound is an important diagnostic imaging tool, commonly used in healthcare for the evaluation of internal body structures. Computer-aided diagnosis (CAD) has become a significant research subject in medical imaging and diagnostic radiology. CAD is widely applied in the detection and differential diagnosis of various abnormalities in medical images obtained through different imaging modalities.
-Computer-aided diagnostics involve two key elements: detection and diagnosis. Detection is the technology used to locate the organ, while diagnosis means identifying the disease.
-This project aims to detect the median nerve in ultrasound images of the wrist.
-The dataset was provided by the Medical Imaging Group (MIG) at the Indian Institute of Science, Bangalore.
+Research internship project at the **Medical Imaging Group, Indian Institute of Science (IISc), Bangalore**
+Supervised by Prof. Phaneendra K · Oct 2023 – Mar 2024
+
+## Overview
+Developed a deep learning pipeline to automatically localise the median nerve in wrist 
+ultrasound scans — a task relevant to carpal tunnel syndrome diagnosis. The model removes 
+the need for manual annotation by clinicians, reducing diagnosis time.
+
+## Method
+- Architecture: U-Net convolutional neural network for semantic segmentation
+- Framework: TensorFlow / Keras
+- Preprocessing: denoising, normalisation, and augmentation pipeline built with NumPy and OpenCV
+- Dataset: wrist ultrasound images provided by the MIG lab at IISc (not publicly available)
+
+## Results
+Achieved **94.6% Dice coefficient** on held-out test set.
+
+## Stack
+Python · TensorFlow · Keras · NumPy · OpenCV · Jupyter
 
 ## Results
 ![image](https://github.com/user-attachments/assets/9cb29fd2-ccdf-4e2a-8d09-1d038e7359cc)
